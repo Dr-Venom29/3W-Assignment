@@ -147,7 +147,7 @@ export default function CreatePost({ onPostCreated, onModeChange }) {
     <Paper
       elevation={0}
       sx={{
-        p: { xs: 2, sm: 3 },
+        p: { xs: 2, sm: 2.5 },
         borderRadius: '24px',
         background: 'background.paper',
         boxShadow: '0 6px 18px rgba(0,0,0,0.05)',
@@ -189,7 +189,10 @@ export default function CreatePost({ onPostCreated, onModeChange }) {
               minWidth: 0,
               borderRadius: '999px',
               textTransform: 'none',
-              px: { xs: 2.2, sm: 3 },
+              px: { xs: 2.2, sm: 2.6 },
+              py: { xs: 0.7, sm: 0.6 },
+              fontSize: { xs: '0.9rem', sm: '0.95rem' },
+              lineHeight: 1.1,
               boxShadow: 'none',
             }}
             onClick={() => changeMode('post')}
@@ -204,7 +207,10 @@ export default function CreatePost({ onPostCreated, onModeChange }) {
               borderRadius: '999px',
               textTransform: 'none',
               color: '#666',
-              px: { xs: 2.2, sm: 3 },
+              px: { xs: 2.2, sm: 2.6 },
+              py: { xs: 0.7, sm: 0.6 },
+              fontSize: { xs: '0.9rem', sm: '0.95rem' },
+              lineHeight: 1.1,
             }}
             color={mode === 'promotion' ? 'primary' : 'inherit'}
             onClick={() => changeMode('promotion')}
@@ -216,7 +222,7 @@ export default function CreatePost({ onPostCreated, onModeChange }) {
       {mode === 'post' && (
         <TextField
           multiline
-          minRows={isMobile ? 3 : 5}
+          minRows={isMobile ? 3 : 4}
           fullWidth
           placeholder="What’s on your mind?"
           variant="standard"
@@ -225,7 +231,7 @@ export default function CreatePost({ onPostCreated, onModeChange }) {
           InputProps={{
             disableUnderline: true,
             sx: {
-              fontSize: { xs: '1rem', sm: '1.2rem' },
+              fontSize: { xs: '1rem', sm: '1.1rem' },
               color: '#444',
             },
           }}

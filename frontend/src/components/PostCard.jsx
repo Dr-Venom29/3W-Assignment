@@ -113,7 +113,7 @@ export default function PostCard({ post, refreshPosts }) {
       <Paper
         elevation={0}
         sx={{
-          p: { xs: 2, sm: 3 },
+          p: { xs: 2, sm: 2.5 },
           borderRadius: '24px',
           background: isPromotion ? '#fffdf5' : '#fff',
           border: isPromotion ? '1px solid #facc15' : 'none',
@@ -189,7 +189,7 @@ export default function PostCard({ post, refreshPosts }) {
         {/* Content */}
         {isPromotion ? (
           <Box mt={3}>
-            <Typography fontSize={{ xs: '1.3rem', sm: '1.6rem' }} fontWeight="bold" color="#1f2937">
+            <Typography fontSize={{ xs: '1.2rem', sm: '1.4rem' }} fontWeight="bold" color="#1f2937">
               {promotion.title}
             </Typography>
             {promotion.description && (
@@ -236,7 +236,7 @@ export default function PostCard({ post, refreshPosts }) {
           </Box>
         ) : (
           post.text && (
-            <Typography mt={2.5} fontSize={{ xs: '1.1rem', sm: '1.6rem' }} color="#222">
+            <Typography mt={2} fontSize={{ xs: '1.05rem', sm: '1.35rem' }} color="#222">
               {post.text}
             </Typography>
           )
