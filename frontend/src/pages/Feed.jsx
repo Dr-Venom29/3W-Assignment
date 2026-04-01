@@ -58,7 +58,7 @@ export default function Feed({ onLogout }) {
   const visiblePosts = getVisiblePosts();
 
   return (
-    <Box sx={{ background: '#f5f6fb', minHeight: '100vh', py: { xs: 2, sm: 3 }, pb: 12 }}>
+    <Box sx={{ background: '#f5f6fb', minHeight: '100vh', py: { xs: 2, sm: 3 }, pb: { xs: 18, sm: 20 } }}>
       <Container maxWidth="sm" sx={{ px: { xs: 2, sm: 0 } }}>
         <Navbar onLogout={onLogout} />
         <CreatePost
